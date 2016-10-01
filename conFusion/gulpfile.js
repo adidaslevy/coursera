@@ -76,8 +76,9 @@ gulp.task('browser-sync', ['default'], function () {
 
     browserSync.init(files, {
         server: {
-            baseDir: "dist",
-            index: "dishdetail.html"
+            proxy: "local.dev",
+            baseDir: "dist/",
+            index: "menu.html"
         }
     });
     
